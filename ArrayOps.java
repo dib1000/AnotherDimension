@@ -6,4 +6,13 @@ public class ArrayOps {
     }
     return sum;
   }
+  public static int largest(int[] arr) {
+    int large = -1000000;
+    for(int i = 0; i<arr.length; i++) {
+      if(arr[i]> large) {
+        large = arr[i];
+      }
+    }
+    return large;
+  }
 }
