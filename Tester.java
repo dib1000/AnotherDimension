@@ -3,6 +3,8 @@ public class Tester {
   public static void main(String[] args) {
     int[] B = { 55,54,-32,46};
     int[][] A = { {  1,  0, 12, -1 }, {  7, -2,  2,  1 }, { -5, -2,  2, -9 } };
+    int[][] row = { {  1,  2, 3, 4 }, {  2, 3,  4,  1 }, { 3, 4,  1, 2 } };
+    int[][] col = { {  1,  1, 1 }, {  2, 2, 2 }, { 3,  3, 3 } };
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.sum(A));
     System.out.println(ArrayOps.largest(B));
@@ -10,5 +12,7 @@ public class Tester {
     System.out.println( Arrays.toString(ArrayOps.largestInRows(A)));
     System.out.println(ArrayOps.sumCol(A,0));
     System.out.println( Arrays.toString(ArrayOps.sumCols(A)));
+    System.out.println(ArrayOps.isRowMagic(row));
+    System.out.println(ArrayOps.isRowMagic(col));
   }
 }

@@ -50,4 +50,14 @@ public class ArrayOps {
     }
     return sums;
   }
+  public static boolean isRowMagic(int[][] matrix) {
+    int rowValue = sum(matrix[0]);
+    for(int i = 1; i<matrix.length; i++) {
+      int storage = sum(matrix[i]);
+      if(rowValue!=storage) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
