@@ -8,5 +8,7 @@ public class Tester {
     System.out.println(ArrayOps.largest(B));
     System.out.println( Arrays.toString(ArrayOps.sumRows(A)));
     System.out.println( Arrays.toString(ArrayOps.largestInRows(A)));
+    System.out.println(ArrayOps.sumCol(A,0));
+    System.out.println(ArrayOps.sumCol(A,1));
   }
 }
